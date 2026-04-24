@@ -30,3 +30,9 @@ The steps that I took to complete this project:
 10.Creating a menu function to choose which CRUDE operation to run in the terminal
 <br>
 
+
+Ai tools that I use:
+<br>
+1.Chatgpt to find helpfull videos to watch
+<br>
+2.IntelliCode that is an extention in VS Code only to check if everything was running without any errors
