@@ -30,3 +30,22 @@ def list_mentees():
 list_mentees()
 
 
+#Third function changes a mentee's cohort by id
+def update_mentee(mentee_id=None, new_cohort=None):
+    if mentee_id is None:
+        mentee_id = input("Enter mentee id: ")
+    if new_cohort is None:
+        new_cohort = input("Enter the new cohort: ")
+
+    cursor.execute(
+        'UPDATE mentees SET cohort = ? WHERE id = ?',
+        (new_cohort, mentee_id)
+    )
+
+    if cursor.rowcount == 0:
+        print(f"No mentee found with id {mentee_id}.")
+    else:
+        db.commit()
+        print(f"Mentee {mentee_id} cohort updated to {new_cohort}.")
+
+update_mentee()
