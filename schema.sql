@@ -1,0 +1,8 @@
+-- SQLite
+CREATE TABLE IF NOT EXISTS mentees(
+    id SERIAL PRIMARY KEY,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    cohort VARCHAR(50) NOT NULL,
+    enrolled_date DATE DEFAULT CURRENT_DATE
+);
