@@ -13,4 +13,7 @@ The steps that I took to complete this project:
 4.Creating tables and inserting data inside the tables
 5.Creating the first function that I can insert new rows(data) in the terminal
 6.Creating the second function that I print in the terminal all the full_names by the ASC order
-7.
+7.Creating the third function where in the terminal I write which id I want to choose and change the cohort to whatever I want
+8.Creating the fourth function where in the terminal I write the id that I want to delete
+9.For each function I tested them couple of times to see if there will be any errors
+10.Creating a menu function to choose which CRUDE operation to run in the terminal
