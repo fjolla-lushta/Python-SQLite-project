@@ -19,3 +19,14 @@ def create_mentee():
     db.commit()
 
 create_mentee()   
+
+#Second function prints all mentees, one per line, sorted by full_name
+def list_mentees():
+    cursor.execute('SELECT full_name FROM mentees ORDER BY full_name')
+    mentees=cursor.fetchall()
+    for mentee in mentees:
+        print(mentee[0])
+
+list_mentees()
+
+
